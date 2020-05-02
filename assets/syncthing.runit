@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+
+exec /sbin/setuser $SYNCTHING_USERNAME /usr/bin/syncthing -no-browser -gui-address=$SYNCTHING_GUI -no-restart -logflags=0
